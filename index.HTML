@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial sclale=1.0">
+    <title>Quiz Sonoalaska</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+<div class="container">
+    <h1>Quiz Sonoalaska</h1>
+
+<div id ="schermatainiziale">
+    
+    <h2>Regole del quiz</h2>
+
+    <p>
+        Benvenuto su questo quiz, il gioco è molto semplice. Comparirà una frase di una canzone di sonoalaska e tu devi inserire il titolo corretto. Se indovini farai un punto, altrimenti zero. Ci sarà una frase per ogn canzone, alla fine del quiz vediamo quante canzoni sai di sonoalaska e quanto sei fan <br>
+        ATTENZIONE: Scrivere ogni titolo con la prima lettera e solo la prima lettera maiuscola, a meno che non siano taglie (ad esempio XXL). Iniziamo! 
+    </p>
+
+    <button onclick="iniziaQuiz()">Inizia Quiz</button>
+
+</div>
+    
+<div id="quiz" style="display:none;">
+    <p id="domanda"></p>
+    <input type="text" id="risposta"
+placeholder="Scrivi il titolo della canzone">
+    <button id="btnInvia"
+    onclick="controllaRisposta()">Invia</button>
+    <p id="messaggio"></p>
+    <p id="punteggio"></p>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
